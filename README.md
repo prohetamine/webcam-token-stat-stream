@@ -1,8 +1,3 @@
-# Install
+![logo](https://github.com/prohetamine/webcam-token-stat-stream/blob/main/media/logo.png)
 
-yarn
-
-# Launch
-
-yarn start
-# webcam-token-stat-stream
+Contacts telegram: @prohetamine
