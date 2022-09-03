@@ -30,7 +30,12 @@ app.get('/events', (req, res) => {
   if (LocalContxetId !== contextId) {
     console.log('clear stat')
     LocalContxetId = contextId
-    tokens = {}
+    tokens = {
+      chaturbate: {},
+      bongacams: {},
+      striptchat: {},
+      myfreecams: {}
+    }
   }
 
   if (isToken === 'true') {
