@@ -7,7 +7,12 @@ const express         = require('express')
 
 app.use(cors())
 
-let tokens = {}
+let tokens = {
+  chaturbate: {},
+  bongacams: {},
+  striptchat: {},
+  myfreecams: {}
+}
   , LocalContxetId = 'null'
 
 viewStat(tokens)
@@ -20,6 +25,7 @@ app.get('/events', (req, res) => {
     username,
     contextId
   } = req.query
+
 
   if (LocalContxetId !== contextId) {
     console.log('clear stat')

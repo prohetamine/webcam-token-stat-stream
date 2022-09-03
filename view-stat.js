@@ -13,21 +13,23 @@ module.exports = tokens => {
   )
 
   const platformsCount = plaforms.map(
-    plaforms =>
-      Object.values(tokens[plaforms])
+    plaforms => {
+      const tokensCount = Object.values(tokens[plaforms])
         .reduce(
           (ctx, number) => ctx + number, 0
         )
-        .toString()
+
+      return `${tokensCount}tk / ${(tokensCount * 0.05).toFixed(2)}$`
+    }
   ).map(
     platform =>
       platform + (' '.repeat(lineLength - platform.length))
   )
 
-  const title = `platform   | ${platformsTitle.join('| ')}`
+  const title = `    |  platform     | ${platformsTitle.join('| ')}`
   console.log(title)
   console.log('-'.repeat(title.length))
-  console.log(`tokens     | ${platformsCount.join('| ')}`)
+  console.log(`#   |  tokens / $   | ${platformsCount.join('| ')}`)
   console.log('-'.repeat(title.length))
 
   for (let i = 0; i < itemsCount; i++) {
@@ -68,6 +70,6 @@ module.exports = tokens => {
                         username + (' '.repeat(lineLength - username.length))
                     )
 
-    console.log(`username   | ${users.join('| ')}`)
+    console.log(`#${( n => n + (' '.repeat(2 - n.toString().length)) )(i+1)}  | username     | ${users.join('| ')}`)
   }
 }
