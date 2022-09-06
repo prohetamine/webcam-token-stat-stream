@@ -4,7 +4,7 @@
 
 ```sh
 npm i
-yarn start
+yarn 8889 or yarn 8888
 ```
 
 Contacts telegram: @prohetamine

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "8888": "PORT=8888 node test-man-vs-woman-two-model/index.js",
+    "8889": "PORT=8889 node test-man-vs-woman-two-model/index.js"
   },
   "author": "",
   "license": "ISC",
