@@ -4,15 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "8888": "PORT=8888 node test-man-vs-woman-two-model/index.js",
-    "8889": "PORT=8889 node test-man-vs-woman-two-model/index.js"
+    "start": "node src/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.0",
-    "cors": "^2.8.5",
-    "express": "^4.18.1"
+    "node-mermaid-extension": "^1.0.1"
   }
 }

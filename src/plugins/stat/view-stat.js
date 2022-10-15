@@ -5,7 +5,11 @@ module.exports = tokens => {
 
   console.clear()
 
-  const plaforms = Object.keys(tokens)
+  const plaforms = Object.keys(tokens).sort((b, a) =>
+    Object.keys(tokens[a]).reduce((ctx, elem) => ctx + tokens[a][elem], 0)
+      -
+    Object.keys(tokens[b]).reduce((ctx, elem) => ctx + tokens[b][elem], 0)
+  )
 
   const platformsTitle = plaforms.map(
     platform =>

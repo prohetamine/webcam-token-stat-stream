@@ -1,4 +1,18 @@
-const express         = require('express')
+const Mermaid = require('node-mermaid-extension')({
+  listen: 8888
+})
+
+const stat          = require('./plugins/stat')
+    , end           = require('node-mermaid-extension/plugin/end')
+
+;(async () => {
+  const extension = await Mermaid.ready()
+
+  extension.use(stat)
+  extension.use(end)
+})()
+
+/*const express         = require('express')
     , app             = express()
     , cors            = require('cors')
     , bodyParser      = require('body-parser')
@@ -56,3 +70,4 @@ app.get('/events', (req, res) => {
 })
 
 app.listen(8888)
+*/
