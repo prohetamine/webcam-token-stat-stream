@@ -1,7 +1,7 @@
 {
   "chaturbateHttpEvent": [{
     "fetch": {
-      "url": "http://localhost:8888/events",
+      "url": "http://localhost:9999/events",
       "method": "POST",
       "mode": "cors",
       "headers": {
@@ -15,7 +15,7 @@
   }],
   "stripchatHttpEvent": [{
     "fetch": {
-      "url": "http://localhost:8888/events",
+      "url": "http://localhost:9999/events",
       "method": "POST",
       "mode": "cors",
       "headers": {

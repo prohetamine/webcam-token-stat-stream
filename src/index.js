@@ -1,5 +1,5 @@
 const Mermaid = require('node-mermaid-extension')({
-  listen: 8888
+  port: 9999
 })
 
 const stat          = require('./plugins/stat')
