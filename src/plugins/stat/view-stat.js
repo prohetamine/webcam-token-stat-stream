@@ -58,7 +58,7 @@ module.exports = tokens => {
 
                           ctx = ctx.map(
                             item => {
-                              item[itemIndex] = parsePlatform[i] ? parsePlatform[i].join(': ') : 'not star'
+                              item[itemIndex] = parsePlatform[i] ? `${parsePlatform[i][0]}: ${parsePlatform[i][1]}tk / ${(parsePlatform[i][1] * 0.05).toFixed(2)}$` : 'not star'
                               return item
                             }
                           )
