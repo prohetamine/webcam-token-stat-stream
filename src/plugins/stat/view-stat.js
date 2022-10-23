@@ -69,11 +69,12 @@ module.exports = tokens => {
                         Array(plaforms.length).fill([])
                       )
                     )[i]
+                    .map(username => (u => u.length > 28 ? username.slice(0, 25) + '...' : username)(username))
                     .map(
                       username =>
                         username + (' '.repeat(lineLength - username.length))
                     )
 
-    console.log(`#${( n => n + (' '.repeat(2 - n.toString().length)) )(i+1)}  | username     | ${users.join('| ')}`)
+    console.log(`#${( n => n + (' '.repeat(2 - n.toString().length)))(i+1)}  | username     | ${users.join('| ')}`)
   }
 }
