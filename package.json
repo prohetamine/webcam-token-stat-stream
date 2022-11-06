@@ -1,6 +1,6 @@
 {
   "name": "webcam-token-stat-stream",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-mermaid-extension": "^1.0.1"
+    "node-mermaid-extension": "^1.1.1"
   }
 }

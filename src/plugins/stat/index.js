@@ -10,7 +10,7 @@ let stack = {
 viewStat(stack)
 
 module.exports = ({ fetch, test }) =>
-  fetch.usePost('/events', ({ event, parseBase64, sendMessageSocket, nextPlugin }) => {
+  fetch.usePost('/events', ({ event, sendMessageSocket, nextPlugin }) => {
     const isToken = event.parseEvent.isToken
         , isUser = event.parseEvent.isUser
         , username = event.parseEvent.username
