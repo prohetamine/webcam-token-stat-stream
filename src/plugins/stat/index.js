@@ -4,6 +4,7 @@ let stack = {
   chaturbate: {},
   bongacams: {},
   stripchat: {},
+  xhamster: {},
   myfreecams: {}
 }
 
