@@ -3,7 +3,7 @@ const Mermaid = require('node-mermaid-extension')({
 })
 
 const stat          = require('./plugins/stat')
-    , end           = require('node-mermaid-extension/plugin/end')
+    , end           = require('node-mermaid-extension/plugins/end')
 
 ;(async () => {
   const extension = await Mermaid.ready()
